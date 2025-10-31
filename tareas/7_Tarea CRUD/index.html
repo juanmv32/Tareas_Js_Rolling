@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="bg-black text-white fondo">
+    <div class="container mt-2 col-md-7">
+      <div class="row">
+        <div class="col text-center">
+          <h1 id="titulo" class="mb-4">Agregar Vehiculo</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <form id="vehicle-form">
+            <div class="mb-3">
+              <label for="brand" class="form-label">Fabricante</label>
+              <input type="text" class="form-control" id="brand" required />
+            </div>
+            <div class="mb-3">
+              <label for="model" class="form-label">Modelo</label>
+              <input type="text" class="form-control" id="model" required />
+            </div>
+            <div class="mb-3">
+              <label for="year" class="form-label">Año</label>
+              <input type="number" class="form-control" id="year" required />
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Descripción</label>
+              <textarea
+                class="form-control"
+                id="description"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label for="picture" class="form-label">Imagen</label>
+              <input
+                type="text"
+                class="form-control"
+                id="picture"
+                placeholder="ingrese una url valida"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">
+              Agregar Vehiculo
+            </button>
+          </form>
+        </div>
+        <div class="col-5">
+          <img
+            src="https://i.pinimg.com/originals/01/7c/44/017c44c97a38c1c4999681e28c39271d.png"
+            alt="Foto de Vehiculo"
+            class="profile-photo"
+            id="preview-img"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2">
+        <h2>Lista de Vehiculos</h2>
+        <div class="mb-3 d-flex aling-items-center gap-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Modelo del Vehiculo..."
+            id="input-search"
+          />
+          <button class="btn btn-success" onclick="buscarVehiculo()">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Fabricante</th>
+              <th>Año</th>
+              <th>Imagen</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./intro.js"></script>
+  </body>
+</html>

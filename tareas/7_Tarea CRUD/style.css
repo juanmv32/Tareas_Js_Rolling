@@ -1,0 +1,31 @@
+.fondo {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.fondo::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  /* imagen y repetición */
+  background-image: url("https://i.pinimg.com/736x/3d/b2/d5/3db2d5154f3c9d41670cba1dc6616307.jpg");
+  background-repeat: repeat;
+  background-size: 400px auto; /* ajustá el tamaño del patrón */
+  background-position: 0 0;
+
+  /* filtros para el fondo */
+  filter: grayscale(60%) brightness(0.4) contrast(1.4) blur(2px);
+}
+
+#preview-img {
+  max-height: 600px;
+}
+
+.micro-photo {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
