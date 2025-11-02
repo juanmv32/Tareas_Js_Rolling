@@ -14,7 +14,7 @@ cursado.
 
 ---
 
-## 🛠️ Tecnologías Utilizaran
+## 🛠️ Tecnologías A Utilizar
 
 <div align="center">
 
