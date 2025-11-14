@@ -1,0 +1,21 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 250px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  margin: 14px auto;
+  display: block;
+  background-color: #e4d1c5;
+  color: black;
+  & img {
+    width: 100px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 12px rgba(245, 208, 186, 0.443);
+  }
+}
