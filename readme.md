@@ -33,6 +33,7 @@ cursado.
 - 📂 **Tareas_Js_Rolling/**
   - 📁 **practicas/** → Aquí se subirán las prácticas realizadas en clase o de
     manera independiente.
+  - 📁 **react_practicas/** → Aquí se subirá la práctica de Raect.
   - 📁 **tareas/** → Aquí se subirán las tareas asignadas durante el curso para
     su corrección.
   - 📜 **README.md** → Documento principal con la descripción del repositorio.
